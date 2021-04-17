@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="registration" parallel="tests" thread-count="2">
+    <test name="registrationChrome">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="TestClasses.Registration"/>
+
+        </classes>
+    </test>
+
+    <test name="registrationOpera">
+        <parameter name="browser" value="OPERA"/>
+        <classes>
+            <class name="TestClasses.Registration"/>
+
+        </classes>
+    </test>
+
+</suite>
